@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="font">
+    <font>
+     <family>Segoe UI Semibold</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_one">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>489</width>
+             <height>737</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+             <widget class="QFrame" name="first_page_headerl_frame">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#first_page_headerl_frame{
+	background-color: white;
+	border-radius: 10px;
+	border-box: 2px solid black;
+	box-shadow: 5px 5px 5px grey;
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="first_page_header">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="sizeIncrement">
+                  <size>
+                   <width>200</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 15pt;
+font-family: &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>Характеристика объекта КИИ</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line">
+              <property name="styleSheet">
+               <string notr="true">border: 2px solid white;
+color: white;
+</string>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignBottom">
+             <widget class="QFrame" name="first_page_main_frame">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <layout class="QVBoxLayout" name="first_page_main_layout">
+                 <item>
+                  <widget class="QLineEdit" name="obj_name_line">
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Наименование объекта</string>
+                   </property>
+                   <property name="cursorMoveStyle">
+                    <enum>Qt::VisualMoveStyle</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="obj_type_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Тип объекта</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="address_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Адрес местонахождения</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="sphere_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Сфера деятельности (основная)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="additional_sphere_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Дополнительная сфера деятельности</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="subj_name_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Наименование субъекта</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="subj_address_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Адрес местонахождения субъекта (юридический адрес)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="post_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Должность ответственного</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="post_name_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Инициалы и фамилия ответственного</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="resp_name_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>ФИО ответственного лица</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="struct_resp_line">
+                   <property name="styleSheet">
+                    <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Ответственное структурное подразделение</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_2">
+              <property name="styleSheet">
+               <string notr="true">border: 2px solid white;
+color: white;
+</string>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignBottom">
+             <widget class="QFrame" name="first_page_buttons_frame">
+              <property name="styleSheet">
+               <string notr="true">pushButton{
+	background-color: black;
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QPushButton" name="first_page_clear_btn">
+                 <property name="styleSheet">
+                  <string notr="true">#first_page_clear_btn{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#first_page_clear_btn:hover{
+	background-color: rgb(255, 44, 44);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Очистить</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="first_page_save_btn">
+                 <property name="styleSheet">
+                  <string notr="true">#first_page_save_btn{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#first_page_save_btn:hover{
+	
+	background-color: rgb(4, 208, 21);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Сохранить</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="first_page_next_btn">
+                 <property name="styleSheet">
+                  <string notr="true">#first_page_next_btn{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#first_page_next_btn:hover{
+	
+	background-color: rgb(60, 122, 255);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Далее</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_two">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_4">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QFrame" name="second_page_header_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="label_2">
+                <property name="styleSheet">
+                 <string notr="true">	font-family: &quot;Segoe UI&quot;;
+	font-size: 15pt;</string>
+                </property>
+                <property name="text">
+                 <string>Состав комиссии</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="second_page_main_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <layout class="QGridLayout" name="second_page_main_grid">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="order_number_label">
+                  <property name="styleSheet">
+                   <string notr="true">	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Приказ №:</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="order_date_label">
+                  <property name="styleSheet">
+                   <string notr="true">	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Дата приказа:</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="order_number_line">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Введите номер приказа</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="order_date_line">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Введите дату приказа</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="city_label">
+                  <property name="styleSheet">
+                   <string notr="true">	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Город:</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QLineEdit" name="city_line">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Введите город</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QPushButton" name="add_comission_header_button">
+                  <property name="styleSheet">
+                   <string notr="true">#add_comission_header_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#add_comission_header_button:hover{
+	
+	background-color: rgb(170, 255, 0);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Добавить председателя комиссии</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="add_comission_button">
+                  <property name="styleSheet">
+                   <string notr="true">#add_comission_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#add_comission_button:hover{
+	
+	background-color: rgb(170, 255, 0);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Добавить члена комиссии</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QPushButton" name="del_comission_header_button">
+                  <property name="styleSheet">
+                   <string notr="true">#del_comission_header_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#del_comission_header_button:hover{
+	background-color: rgb(255, 44, 44);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Удалить председателя комисии</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="del_comission_button">
+                  <property name="styleSheet">
+                   <string notr="true">#del_comission_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#del_comission_button:hover{
+	background-color: rgb(255, 44, 44);
+	border-radius: 10px;
+	border: transparent;
+}	</string>
+                  </property>
+                  <property name="text">
+                   <string>Удалить члена комиссии</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_11"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="second_page_buttons_frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QPushButton" name="create_act_button">
+                <property name="styleSheet">
+                 <string notr="true">#create_act_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#create_act_button:hover{
+	
+	background-color: rgb(170, 255, 0);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Составить акт</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="create_order_button">
+                <property name="styleSheet">
+                 <string notr="true">#create_order_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#create_order_button:hover{
+	
+	background-color: rgb(170, 255, 0);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Составить приказ</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="second_page_buttons_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QPushButton" name="second_page_clear_button">
+                <property name="styleSheet">
+                 <string notr="true">#second_page_clear_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#second_page_clear_button:hover{
+	background-color: rgb(255, 44, 44);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Очистить</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="second_page_back_button">
+                <property name="styleSheet">
+                 <string notr="true">#second_page_back_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#second_page_back_button:hover{
+	
+	background-color: rgb(255, 17, 17);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Назад</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="second_page_next_button">
+                <property name="styleSheet">
+                 <string notr="true">#second_page_next_button{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#second_page_next_button:hover{
+	
+	background-color: rgb(60, 122, 255);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Далее</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="label">
+                <property name="styleSheet">
+                 <string notr="true">font-size: 15pt;
+font-family: &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Дополнительные характеристики&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;объекта КИИ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_3">
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid white;
+color: white;
+</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_14">
+                <item>
+                 <widget class="QLineEdit" name="obj_target">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Назначение объекта</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="obj_architecture">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Архитектура объекта</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="EWM_name">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Наименование ЭВМ</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="PO_name">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Наименование ПО</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="PO_2_name">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Наименование прикладных ПО</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="signal_category">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Категория сети электросвязи</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="provider_name">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Наименование оператора связи</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="bad_category">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Категория нарушителя</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="life_threats">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Основные угрозы безопасности</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="injections_types">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Типы компьютерных инцидентов</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="security_methods">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Реализованные меры защиты</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="security_methods_2">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;
+</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Применяемые средства защиты</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="organization_methods">
+                  <property name="styleSheet">
+                   <string notr="true">margin: 5px;
+border: 1px solid white;
+border-radius: 10px;
+border-color: black;
+font-family: &quot;Segoe UI&quot;;
+font-size: 12pt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Организационные меры</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_4">
+             <property name="styleSheet">
+              <string notr="true">border: 2px solid white;
+color: white;
+</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QPushButton" name="third_page_clear_btn">
+                <property name="styleSheet">
+                 <string notr="true">#third_page_clear_btn{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#third_page_clear_btn:hover{
+	background-color: rgb(255, 44, 44);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Очистить</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="create_table_btn">
+                <property name="styleSheet">
+                 <string notr="true">#create_table_btn{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#create_table_btn:hover{
+	
+	background-color: rgb(4, 208, 21);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Составить таблицу</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="third_page_close_btn">
+                <property name="styleSheet">
+                 <string notr="true">#third_page_close_btn{
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	background-color: white;
+	transition-duration: 1.5s;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 10pt;
+}
+#third_page_close_btn:hover{
+	
+	background-color: rgb(60, 122, 255);
+	border-radius: 10px;
+	border: transparent;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Закрыть</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
