@@ -915,7 +915,7 @@ class Ui_MainWindow(object):
                 "Тип объекта": f"{self.obj_type_line.text()}",
             }
         )
-        change_table_text(self.dictionary)
+        change_table_text(dict=self.dictionary)
         os.startfile("Таблица категорирования.docx")
 
     def clear_third_page(self):
